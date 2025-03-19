@@ -1,11 +1,16 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "Bolun Sun"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
+I am currently a Research Engineer at the [Stavros Niarchos Foundation Agora Institute at Johns Hopkins University (JHU)](https://snfagora.jhu.edu/), working closely with Prof. [Yuen Yuen Ang](https://politicalscience.jhu.edu/directory/yuen-yuen-ang/) and [Charles Chang](https://charleschang.me/) since 2023. Before joining the SNF Agora, I completed a dual master's degree in Information Systems and Computer Science at JHU, concentrating in Human Language Technology. I earned my bachelor's degree in Informatics from the Donald Bren School of Information and Computer Sciences at the University of California, Irvine (UCI), specializing in Human-Computer Interaction and Health Informatics. At UCI, I worked with Prof. [Mark Warschauer](https://markwarschauer.com/) and Dr. Dandan Yang in the field of educational technology.
+
+My research broadly centers around Natural Language Processing (NLP), human-centered artificial intelligence (AI), AI agents, and computational social science. I possess practical experience applying AI technologies to diverse fields, including healthcare, education, social media, political science, and civil engineering. With my interdisciplinary academic background, I consider myself a multidisciplinary researcher committed not only to advancing algorithms and technologies such as large language models but also to responsibly leveraging AI solutions across various domains to positively impact society and minimize potential negative consequences.
+
+Please feel free to contact me if you are interested in my research. (Email: bsun26 AT jh.edu | WeChat ID: sun565563323).
 
 This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
 
