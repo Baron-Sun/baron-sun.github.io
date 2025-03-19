@@ -23,7 +23,7 @@ repository               : "academicpages/academicpages.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Bolun Sun (孙伯伦）"
+  name             : "Bolun Sun (孙伯伦)"
   pronouns         : # example: "she/her"  
   bio              : "Research Engineer at JHU"
   location         : "Baltimore, MD, U.S."
