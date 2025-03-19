@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Bolun Sun"
+title: "About me:"
 author_profile: true
 redirect_from: 
   - /about/
