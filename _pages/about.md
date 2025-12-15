@@ -20,9 +20,9 @@ Please feel free to contact me if you are interested in my research.
 
 <div class="notice--info">
 <ul>
-  <li><strong>Natural Language Processing</strong>: Large Language Models, AI Agents</li>
-  <li><strong>Computer Vision</strong>: Medical Image Analysis</li>
-  <li><strong>Machine Learning</strong>: Reinforcement Learning, Deep Learning</li>
+  <li><strong>Computational Social Science & Policy</strong>: Adaptive Policy Communication, Social Media Analysis, Opinion Polarization, Cognitive Rigidity, Social Dynamics Modeling</li>
+  <li><strong>Natural Language Processing</strong>: Large Language Models (LLMs), Reasoning Mechanisms, Dynamic Context Processing, Aspect-Based Sentiment Analysis</li>
+  <li><strong>Human-Centered AI & HCI</strong>: Human-Centered AI, Interactive AI Agents, Digital Privacy Management, AI-Assisted Decision Making, Cognitive Support</li>
 </ul>
 </div>
 
