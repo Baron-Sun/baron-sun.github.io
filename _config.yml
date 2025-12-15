@@ -25,7 +25,7 @@ author:
   avatar           : "1601515341953.png"
   name             : "Bolun Sun (孙伯伦)"
   pronouns         : # example: "she/her"  
-  bio              : "Ph.D. student"
+  bio              : <p class="author__bio">{{ author.bio | replace: "at ", "<br>at " }}</p>
   employer         : "Northwestern University"
   location         : "Evanston, IL, U.S."
   uri              : # URL
