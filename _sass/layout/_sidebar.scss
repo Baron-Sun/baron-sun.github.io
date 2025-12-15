@@ -258,3 +258,15 @@
     }
   }
 }
+
+---
+---
+
+@import "minimal-mistakes";
+
+/* 将头像从圆形改为方形 */
+.author__avatar {
+  img {
+    border-radius: 10px !important;
+  }
+}
