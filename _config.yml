@@ -23,9 +23,9 @@ repository               : "/baron-sun.github.io"
 author:
   # Biographic information
   avatar           : "1601515341953.png"
-  name             : "Bolun Sun <span class='chinese-name'>(孙伯伦)</span>"
+  name             : "Bolun Sun (孙伯伦)"
   pronouns         : # example: "she/her"  
-  bio              : "Ph.D. student<br>Northwestern University"
+  bio              : "Ph.D. student at Northwestern University"
   location         : "Evanston, IL, U.S."
   employer         :
   uri              : # URL
