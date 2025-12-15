@@ -5,7 +5,7 @@ category: conferences
 permalink: /publication/2025-neurips-stop-reading
 date: 2025-12-01
 venue: 'The Thirty-ninth Annual Conference on Neural Information Processing Systems (NeurIPS 2025)'
-paperurl: 'https://arxiv.org/abs/你的论文arxiv链接'
+paperurl: 'https://openreview.net/pdf?id=naAUSeyoZ7'
 Authors: 'Ruixi Xie, Jiacheng Wang, Petru Rosu, Chunyang Deng, <strong>Bolun Sun</strong>, Zining Lin, Bhuwan Dhingra'
 ---
 
