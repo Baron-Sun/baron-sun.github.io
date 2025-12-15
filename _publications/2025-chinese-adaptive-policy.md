@@ -1,7 +1,7 @@
 ---
 title: "Creation of the Chinese Adaptive Policy Communication Corpus"
 collection: publications
-category: manuscripts
+category: conferences
 permalink: /publication/2025-chinese-adaptive-policy
 date: 2025-01-01
 venue: 'arXiv preprint'
