@@ -12,4 +12,4 @@ Prior to joining Northwestern University, I was a Research Engineer at the [Stav
 
 My research broadly centers around Natural Language Processing (NLP), human-centered artificial intelligence (AI), AI agents, and computational social science. I possess practical experience applying AI technologies to diverse fields, including healthcare, education, social media, political science, and civil engineering. With my interdisciplinary academic background, I consider myself a multidisciplinary researcher committed not only to advancing algorithms and technologies but also to responsibly leveraging AI solutions across various domains to positively impact society and minimize potential negative consequences.
 
-Please feel free to contact me if you are interested in my research. (Email: bsun26 AT jh.edu | WeChat ID: sun565563323).
+Please feel free to contact me if you are interested in my research. (Email: bolun.sun AT kellogg.northwestern.edu | WeChat ID: sun565563323).
