@@ -14,3 +14,24 @@ I have published multiple papers in top-tier conferences, including ICLR, NeurIP
 
 Please feel free to contact me if you are interested in my research. 
 (Email: bolun.sun AT kellogg.northwestern.edu | WeChat ID: sun565563323).
+
+
+## 🔬 Research Interests
+
+<div class="notice--info">
+<ul>
+  <li><strong>Natural Language Processing</strong>: Large Language Models, AI Agents</li>
+  <li><strong>Computer Vision</strong>: Medical Image Analysis</li>
+  <li><strong>Machine Learning</strong>: Reinforcement Learning, Deep Learning</li>
+</ul>
+</div>
+
+## 📰 News
+
+| Date | News |
+|------|------|
+| 2025.12 | 🎉 Paper accepted to AAAI 2025! |
+| 2025.10 | Started PhD at XXX University |
+| 2025.06 | Graduated with honors |
+
+## 🎯 Personal
