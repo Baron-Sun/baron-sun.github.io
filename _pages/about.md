@@ -37,7 +37,7 @@ Please feel free to contact me if you are interested in my research.
 | 2025.01 | 🎉 One paper about [LLM for Usable privicy policy](https://openreview.net/forum?id=FEpAUnS7f7) accepted to ICLR 2025!|
 
 ## 🎯 Personal
-While I am dedicated to interdisciplinary research using computational methods, I am equally passionate about life outside the lab. I have been a professional chess player since childhood, consistently ranking in the top three in various provincial and national tournaments. I also held the #1 spot in the Ivy League Championship standings for several years.
+While I am dedicated to interdisciplinary research using computational methods, I am equally passionate about life outside the lab. I have been a professional chess player, consistently ranking in the top three in various provincial and national tournaments. I also held the #1 spot in the Ivy League Championship standings for several years.
 
 I am an avid sports fan, particularly of soccer and basketball, and a die-hard supporter of the San Antonio Spurs. 
 I love hiking and exploring the outdoors with my Golden Retriever TP-arguably the friendliest dog in the world.
