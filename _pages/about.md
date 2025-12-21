@@ -1,6 +1,7 @@
 ---
 permalink: /
-title: ""
+title: "Bolun Sun"
+excerpt: "Ph.D. student at Kellogg, Northwestern. Research in Computational Social Science, NLP, and Human-centered AI."
 author_profile: true
 redirect_from: 
   - /about/
