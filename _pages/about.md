@@ -42,4 +42,5 @@ While I am dedicated to interdisciplinary research using computational methods, 
 I am an avid sports fan, particularly of soccer and basketball, and a die-hard supporter of the San Antonio Spurs. 
 I love hiking and exploring the outdoors with my Golden Retriever TP-arguably the friendliest dog in the world.
 
-<script type="text/javascript" id="mmvst_globe" src="//mapmyvisitors.com/globe.js?d=EOtTpSrblqZTiy0wY3uK1fx1AeUD9obFb7UZMJEt3hM"></script>
+
+<script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=tTp34tLdCZ7mhiAqT_8s1xU-UnTeLCM8nhyLRC1MX_U&cl=ffffff&w=a"></script>
