@@ -31,6 +31,7 @@ Please feel free to contact me if you are interested in my research.
 
 | Date | News |
 |------|------|
+| 2026.01 | 🎉 Admitted to the 2026 International Programme on AI Evaluation: Capabilities and Safety! |
 | 2025.12 | 📑 Preprint: [Creation of the Chinese Adaptive Policy Communication Corpus](https://arxiv.org/abs/2510.08986) |
 | 2025.09 | 🎉 One paper about [LLM reasoning efficiency](https://openreview.net/forum?id=naAUSeyoZ7) accepted to NeurIPS 2025! |
 | 2025.07 |Started PhD at Northwestern University |
