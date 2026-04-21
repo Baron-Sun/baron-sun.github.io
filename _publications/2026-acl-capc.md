@@ -4,7 +4,7 @@ collection: publications
 category: conferences
 permalink: /publication/2026-acl-capc
 date: 2026-07-01
-venue: 'Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (ACL 2026 Main)'
+venue: 'Annual Meeting of the Association for Computational Linguistics (ACL 2026 Main)'
 paperurl: 'https://arxiv.org/abs/2510.08986'
 codeurl: 'https://github.com/Baron-Sun/CAPC-CG'
 dataurl: 'https://huggingface.co/datasets/Baron-Sun/CAPC-CG_V1.0'
