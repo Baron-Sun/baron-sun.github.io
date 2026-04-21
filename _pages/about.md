@@ -29,15 +29,16 @@ Please feel free to contact me if you are interested in my research.
 
 ## 📰 News
 
-| Date | News |
-|------|------|
-| 2026.04 | 🎉 One paper is accepted to ACL Main 2026! |
-| 2026.01 | 🎉 Admitted to the 2026 International Programme on AI Evaluation: Capabilities and Safety! |
-| 2025.12 | 📑 Preprint: [Creation of the Chinese Adaptive Policy Communication Corpus](https://arxiv.org/abs/2510.08986) |
-| 2025.09 | 🎉 One paper about [LLM reasoning efficiency](https://openreview.net/forum?id=naAUSeyoZ7) accepted to NeurIPS 2025! |
-| 2025.07 |Started PhD at Northwestern University |
-| 2025.05 |Ended Research engineer at Johns Hopkins University |
-| 2025.01 | 🎉 One paper about [LLM for Usable privicy policy](https://openreview.net/forum?id=FEpAUnS7f7) accepted to ICLR 2025!|
+### 2026
+- **Apr** — 🎉 Paper accepted to **ACL Main 2026**: [Creation of the Chinese Adaptive Policy Communication Corpus](https://arxiv.org/abs/2510.08986)
+- **Jan** — 🎓 Admitted to the 2026 International Programme on AI Evaluation: Capabilities and Safety
+
+### 2025
+- **Dec** — 📑 Preprint released: [Creation of the Chinese Adaptive Policy Communication Corpus](https://arxiv.org/abs/2510.08986)
+- **Sep** — 🎉 Paper accepted to **NeurIPS 2025**: [Language Models (Mostly) Know When to Stop Reading](https://openreview.net/forum?id=naAUSeyoZ7)
+- **Jul** — 🎓 Started PhD at Northwestern University (Kellogg School of Management)
+- **May** — Concluded Research Engineer role at JHU SNF Agora Institute
+- **Jan** — 🎉 Paper accepted to **ICLR 2025**: [Empowering Users in Digital Privacy Management through Interactive LLM-Based Agents](https://openreview.net/forum?id=FEpAUnS7f7)
 
 ## 🎯 Personal
 While I am dedicated to interdisciplinary research using computational methods, I am equally passionate about life outside the lab. I have been a professional chess player, consistently ranking in the top three in various provincial and national tournaments. I also held the #1 spot in the Ivy League Championship standings for several years.
