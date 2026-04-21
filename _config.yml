@@ -13,7 +13,7 @@ title                    : "Bolun Sun's Homepage"
 title_separator          : "-"
 name                     : "Bolun Sun"
 description              : "Ph.D. student at Kellogg School of Management, Northwestern University. Research in Computational Social Science and NLP."
-url                      : https://baron-sun.github.io/ # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
+url                      : https://baron-sun.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "/baron-sun.github.io"
 
@@ -140,9 +140,13 @@ og_image                 :  # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  type                   : "Person"
+  name                   : "Bolun Sun"
+  links:
+    - "https://scholar.google.com/citations?user=0y7-RYQAAAAJ&hl"
+    - "https://github.com/Baron-Sun"
+    - "https://www.linkedin.com/in/bolun-sun-208530179/"
+    - "https://huggingface.co/Baron-Sun"
 
 
 # Analytics
