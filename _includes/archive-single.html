@@ -66,5 +66,13 @@
       <p><a href="{{ post.slidesurl }}">Download Slides</a></p>
     {% endif %}
 
+    {% if post.codeurl or post.dataurl %}
+      <p>
+        {% if post.codeurl %}<a href="{{ post.codeurl }}"><i class="fa fa-github" aria-hidden="true"></i> Code</a>{% endif %}
+        {% if post.codeurl and post.dataurl %} | {% endif %}
+        {% if post.dataurl %}<a href="{{ post.dataurl }}">🤗 Dataset</a>{% endif %}
+      </p>
+    {% endif %}
+
   </article>
 </div>
