@@ -34,7 +34,6 @@ Please feel free to contact me if you are interested in my research.
 | 2026.06 | 📑 Preprint released: [Artificial Intelligence Systems Distort Upstream Selection in Human Social Learning](https://osf.io/preprints/psyarxiv/qmh3s_v1) |
 | 2026.04 | 🎉 Paper accepted to **ACL Main 2026**: [CAPC-CG: A Large-Scale, Expert-Directed LLM-Annotated Corpus of Adaptive Policy Communication in China](https://aclanthology.org/2026.acl-long.42.pdf) |
 | 2026.01 | 🎓 Admitted to the 2026 International Programme on AI Evaluation: Capabilities and Safety |
-| 2025.12 | 📑 Preprint released: [CAPC-CG: A Large-Scale, Expert-Directed LLM-Annotated Corpus of Adaptive Policy Communication in China](https://arxiv.org/abs/2510.08986) |
 | 2025.09 | 🎉 Paper accepted to **NeurIPS 2025**: [Language Models (Mostly) Know When to Stop Reading](https://openreview.net/forum?id=naAUSeyoZ7) |
 | 2025.07 | 🎓 Started PhD at Northwestern University (Kellogg School of Management) |
 | 2025.05 | Concluded Research Engineer role at JHU SNF Agora Institute |
