@@ -2,11 +2,12 @@
 layout: archive
 title: "Publications"
 permalink: /publications/
-author_profile: true
+excerpt: "Research publications in human-centered AI, human–AI decision-making, natural language processing, and computational social science."
+author_profile: false
 ---
 
 {% if site.author.googlescholar %}
-  <div class="wordwrap">Please find all my publications on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
+  <p class="archive-intro">Research in human-centered AI, human–AI decision-making, natural language processing, and computational social science. For the complete and most current record, see my <a href="{{site.author.googlescholar}}">Google Scholar profile</a>.</p>
 {% endif %}
 
 {% include base_path %}
@@ -31,6 +32,4 @@ author_profile: true
     {% include archive-single.html %}
   {% endfor %}
 {% endif %}
-
-
 
