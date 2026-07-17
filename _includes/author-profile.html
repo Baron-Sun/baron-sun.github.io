@@ -8,9 +8,9 @@
 
   <div class="author__avatar">
     {% if author.avatar contains "://" %}
-    	<img src="{{ author.avatar }}" alt="{{ author.name }}">
+		<img src="{{ author.avatar }}" alt="{{ author.name | markdownify | strip_html | strip_newlines | escape_once }}" loading="lazy" decoding="async">
     {% else %}
-    	<img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" class="author__avatar" alt="{{ author.name }}">
+		<img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" class="author__avatar" alt="{{ author.name | markdownify | strip_html | strip_newlines | escape_once }}" width="350" height="525" loading="lazy" decoding="async">
     {% endif %}
   </div>
 
@@ -21,8 +21,8 @@
   </div>
 
   <div class="author__urls-wrapper">
-    <button class="btn btn--inverse">Follow</button>
-    <ul class="author__urls social-icons">
+    <button id="author-profile-toggle" type="button" class="btn btn--inverse" aria-controls="author-profile-links" aria-expanded="false">Follow</button>
+    <ul id="author-profile-links" class="author__urls social-icons">
       <!-- Font Awesome icons / Biographic information  -->
       {% if author.location %}
         <li class="author__desktop"><i class="fa-solid fa-location-dot icon-pad-right" aria-hidden="true"></i>{{ author.location }}</li>
@@ -34,7 +34,7 @@
         <li><a href="{{ author.uri }}"><i class="fas fa-fw fa-link icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].website_label | default: "Website" }}</a></li>
       {% endif %}
       {% if author.email %}
-        <li><a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].email_label | default: "Email" }}</a></li>
+        <li><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>{{ author.email }}</li>
       {% endif %}
 
       <!-- Font Awesome and Academicons icons / Academic websites -->
@@ -159,3 +159,25 @@
     </ul>
   </div>
 </div>
+
+<script>
+  (function () {
+    var toggle = document.getElementById("author-profile-toggle");
+    if (!toggle) return;
+
+    function syncProfileLinksState() {
+      toggle.setAttribute("aria-expanded", String(toggle.classList.contains("open")));
+    }
+
+    if (window.MutationObserver) {
+      new MutationObserver(syncProfileLinksState).observe(toggle, {
+        attributes: true,
+        attributeFilter: ["class"]
+      });
+    }
+    toggle.addEventListener("click", function () {
+      window.setTimeout(syncProfileLinksState, 0);
+    });
+    syncProfileLinksState();
+  }());
+</script>

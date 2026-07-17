@@ -12,9 +12,10 @@ layout: compress
     <meta name="google-site-verification" content="sGusO4qQMfE4mq9STzIJg10fOFrjlz93NNKcrWRLzn8" />
   </head>
 
-  <body>
+  <body class="layout--{{ page.layout | default: 'default' }}">
 
     {% include browser-upgrade.html %}
+    <a class="skip-link" href="#main">Skip to main content</a>
     {% include masthead.html %}
 
     {{ content }}

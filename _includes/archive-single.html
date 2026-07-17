@@ -41,24 +41,27 @@
         {% if post.collection == 'teaching' %}
           <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif post.collection == 'publications' %}
-          {% if post.Authors %}<p class="archive__item-authors" style="margin: 0.2em 0; color: #555; font-size: 0.95em;">{{ post.Authors }}</p>{% endif %}
-          <p class="archive__item-venue" style="margin: 0.2em 0 0.4em;"><em>{{ post.venue }}</em></p>
+          {% if post.Authors %}<p class="archive__item-authors">{{ post.Authors }}</p>{% endif %}
+          {% if post.venue %}<p class="archive__item-venue"><em>{{ post.venue }}</em></p>{% endif %}
         {% elsif post.date %}
          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
         {% endif %}
 
     {% if post.excerpt and site.read_more != 'enabled' %}
-    <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
+    <div class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</div>
     {% elsif post.excerpt and site.read_more == 'enabled' %}
-    <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
+    <div class="archive__item-excerpt" itemprop="description">
+      {{ post.excerpt | markdownify }}
+      <p><strong><a href="{{ base_path }}{{ post.url }}" rel="permalink">Read more</a></strong></p>
+    </div>
     {% endif %}
 
     {% if post.collection == 'publications' %}
       {% if post.citation %}
-        <p class="archive__item-citation" style="font-size: 0.9em; color: #555;">Recommended citation: {{ post.citation }}</p>
+        <p class="archive__item-citation">Recommended citation: {{ post.citation }}</p>
       {% endif %}
       {% if post.paperurl or post.codeurl or post.dataurl or post.slidesurl %}
-        <p class="archive__item-links" style="margin: 0.3em 0;">
+        <p class="archive__item-links">
           {% assign sep_needed = false %}
           {% if post.paperurl %}<a href="{{ post.paperurl }}"><i class="fas fa-file-pdf" aria-hidden="true"></i> Paper</a>{% assign sep_needed = true %}{% endif %}
           {% if post.codeurl %}{% if sep_needed %} &nbsp;·&nbsp; {% endif %}<a href="{{ post.codeurl }}"><i class="fab fa-github" aria-hidden="true"></i> Code</a>{% assign sep_needed = true %}{% endif %}

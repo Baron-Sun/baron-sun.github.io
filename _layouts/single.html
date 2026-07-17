@@ -17,7 +17,7 @@ layout: default
 <div id="main" role="main">
   {% include sidebar.html %}
 
-  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+  <article class="page{% if page.url == '/' %} page--home{% endif %}" itemscope itemtype="http://schema.org/CreativeWork">
     {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
     {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
     {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date: "%B %d, %Y" }}">{% endif %}
@@ -26,7 +26,7 @@ layout: default
     <div class="page__inner-wrap">
       {% unless page.header.overlay_color or page.header.overlay_image %}
         <header>
-          {% if page.title %}<h1 class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
+          {% if page.title and page.hide_title != true %}<h1 class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
           {% if page.read_time %}
             <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
           {% endif %}
@@ -37,8 +37,8 @@ layout: default
         {% if page.collection == 'teaching' %}
           <p> {{ page.type }}, <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif page.collection == 'publications' %}
-          {% if page.Authors %}<p class="page__authors" style="margin: 0.2em 0; color: #555;">{{ page.Authors }}</p>{% endif %}
-          {% if page.venue %}<p class="page__venue" style="margin: 0.2em 0 0.6em;"><em>{{ page.venue }}</em></p>{% endif %}
+          {% if page.Authors %}<p class="page__authors">{{ page.Authors }}</p>{% endif %}
+          {% if page.venue %}<p class="page__venue"><em>{{ page.venue }}</em></p>{% endif %}
         {% elsif page.venue and page.date %}
           <p>Published in <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif page.date %}
@@ -52,10 +52,10 @@ layout: default
 
         {% if page.collection == 'publications' %}
           {% if page.citation %}
-            <p style="font-size: 0.9em; color: #555;">Recommended citation: {{ page.citation }}</p>
+            <p class="page__citation">Recommended citation: {{ page.citation }}</p>
           {% endif %}
           {% if page.paperurl or page.codeurl or page.dataurl or page.slidesurl %}
-            <p class="page__links" style="margin: 0.8em 0;">
+            <p class="page__links">
               {% assign sep_needed = false %}
               {% if page.paperurl %}<a href="{{ page.paperurl }}"><i class="fas fa-file-pdf" aria-hidden="true"></i> Paper</a>{% assign sep_needed = true %}{% endif %}
               {% if page.codeurl %}{% if sep_needed %} &nbsp;·&nbsp; {% endif %}<a href="{{ page.codeurl }}"><i class="fab fa-github" aria-hidden="true"></i> Code</a>{% assign sep_needed = true %}{% endif %}
@@ -80,12 +80,14 @@ layout: default
         {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>
 
-      <footer class="page__meta">
-        {% if site.data.ui-text[site.locale].meta_label %}
-          <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
-        {% endif %}
-        {% include page__taxonomy.html %}
-      </footer>
+      {% if page.categories.size > 0 or page.tags.size > 0 %}
+        <footer class="page__meta">
+          {% if site.data.ui-text[site.locale].meta_label %}
+            <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
+          {% endif %}
+          {% include page__taxonomy.html %}
+        </footer>
+      {% endif %}
 
       {% if page.share %}{% include social-share.html %}{% endif %}
 

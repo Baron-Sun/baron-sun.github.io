@@ -2,36 +2,40 @@
 layout: archive
 title: "Sitemap"
 permalink: /sitemap/
-author_profile: true
+author_profile: false
+published: false
 ---
 
 {% include base_path %}
 
-A list of all the posts and pages found on the site. For you robots out there, there is an [XML version]({{ base_path }}/sitemap.xml) available for digesting as well.
+A concise index of the public pages and research content on this site. An [XML version]({{ base_path }}/sitemap.xml) is also available for search engines.
 
 <h2>Pages</h2>
-{% for post in site.pages %}
-  {% include archive-single.html %}
+{% assign public_pages = site.pages | sort: "title" %}
+{% for post in public_pages %}
+  {% if post.title and post.sitemap != false and post.published != false %}
+    {% include archive-single.html %}
+  {% endif %}
 {% endfor %}
-
-<h2>Posts</h2>
-{% for post in site.posts %}
-  {% include archive-single.html %}
-{% endfor %}
-
-{% capture written_label %}'None'{% endcapture %}
 
 {% for collection in site.collections %}
-{% unless collection.output == false or collection.label == "posts" %}
-  {% capture label %}{{ collection.label }}{% endcapture %}
-  {% if label != written_label %}
-  <h2>{{ label }}</h2>
-  {% capture written_label %}{{ label }}{% endcapture %}
-  {% endif %}
-{% endunless %}
-{% for post in collection.docs %}
   {% unless collection.output == false or collection.label == "posts" %}
-  {% include archive-single.html %}
+    {% assign public_documents = collection.docs | where_exp: "item", "item.sitemap != false" %}
+    {% assign public_documents = public_documents | where_exp: "item", "item.published != false" %}
+    {% if public_documents.size > 0 %}
+      <h2>{{ collection.label | capitalize }}</h2>
+      {% for post in public_documents %}
+        {% include archive-single.html %}
+      {% endfor %}
+    {% endif %}
   {% endunless %}
 {% endfor %}
-{% endfor %}
+
+{% assign public_posts = site.posts | where_exp: "item", "item.sitemap != false" %}
+{% assign public_posts = public_posts | where_exp: "item", "item.published != false" %}
+{% if public_posts.size > 0 %}
+  <h2>Posts</h2>
+  {% for post in public_posts %}
+    {% include archive-single.html %}
+  {% endfor %}
+{% endif %}
