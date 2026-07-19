@@ -4,6 +4,8 @@ title: "Publications"
 permalink: /publications/
 excerpt: "Research publications in human-centered AI, human–AI decision-making, natural language processing, and computational social science."
 author_profile: false
+visualizations:
+  - living-citation-orbit
 ---
 
 {% if site.author.googlescholar %}
@@ -33,3 +35,11 @@ author_profile: false
   {% endfor %}
 {% endif %}
 
+<section class="publication-constellation" aria-labelledby="publication-constellation-heading">
+  <header class="publication-constellation__header">
+    <p class="research-visual-label">Interactive view</p>
+    <h2 id="publication-constellation-heading">Research Constellation</h2>
+    <p>A citation-ready map of current papers and their thematic neighborhoods. Recent-work citation coverage is still incomplete, so this view deliberately avoids unstable counts.</p>
+  </header>
+  {% include research/living-citation-orbit.html %}
+</section>

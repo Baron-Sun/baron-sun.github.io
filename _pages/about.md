@@ -4,6 +4,8 @@ title: "Bolun Sun"
 excerpt: "I study human-centered AI and human–AI decision-making, focusing on how AI shapes the information people encounter, the judgments they form, and the decisions they make."
 author_profile: false
 hide_title: true
+visualizations:
+  - methods-decisions-braid
 redirect_from:
   - /about/
   - /about.html
@@ -53,20 +55,24 @@ redirect_from:
   <header class="section-heading">
     <h2 id="research-heading">Research Interests</h2>
   </header>
-  <dl class="interest-list home-section__body">
-    <div class="interest-list__item">
-      <dt>Human-Centered AI</dt>
-      <dd>Human–AI interaction, interactive AI agents, digital privacy management, cognitive support, and human agency</dd>
-    </div>
-    <div class="interest-list__item">
-      <dt>Human–AI Decision-Making</dt>
-      <dd>AI-assisted judgment, information selection, social learning, reliance on AI, and individual and collective decision processes</dd>
-    </div>
-    <div class="interest-list__item">
-      <dt>Computational Social Science &amp; Policy Communication</dt>
-      <dd>Adaptive policy communication, opinion and social dynamics, social media analysis, and NLP/LLM methods for studying social behavior</dd>
-    </div>
-  </dl>
+  <div class="home-section__body">
+    <dl class="interest-list">
+      <div class="interest-list__item">
+        <dt>Human-Centered AI</dt>
+        <dd>Human–AI interaction, interactive AI agents, digital privacy management, cognitive support, and human agency</dd>
+      </div>
+      <div class="interest-list__item">
+        <dt>Human–AI Decision-Making</dt>
+        <dd>AI-assisted judgment, information selection, social learning, reliance on AI, and individual and collective decision processes</dd>
+      </div>
+      <div class="interest-list__item">
+        <dt>Computational Social Science &amp; Policy Communication</dt>
+        <dd>Adaptive policy communication, opinion and social dynamics, social media analysis, and NLP/LLM methods for studying social behavior</dd>
+      </div>
+    </dl>
+    {% include research/methods-decisions-braid.html %}
+    <p class="research-braid__next"><a href="{{ '/interactive/' | relative_url }}">Explore how upstream selection shapes social learning <span aria-hidden="true">→</span></a></p>
+  </div>
 </section>
 
 <section class="home-section" aria-labelledby="news-heading">

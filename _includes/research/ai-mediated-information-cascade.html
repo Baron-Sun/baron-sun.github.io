@@ -1,0 +1,53 @@
+<section class="information-cascade" data-information-cascade aria-label="Illustrative AI-mediated information cascade">
+  <div class="information-cascade__controls" role="group" aria-label="Illustrative upstream selection pattern">
+    <span class="information-cascade__control-label">Selection pattern</span>
+    <button type="button" class="information-cascade__mode" data-cascade-mode="broad" aria-pressed="true">Broad selection (6 of 8)</button>
+    <button type="button" class="information-cascade__mode" data-cascade-mode="concentrated" aria-pressed="false">Concentrated selection (3 of 8)</button>
+  </div>
+  <p class="information-cascade__guide"><strong>How to read:</strong> each O is one possible observation—not a person or outcome. Read left to right: lines show what the AI surfaces; the three columns show what later learners see across successive rounds. Click any O to trace it.</p>
+
+  <div class="information-cascade__plot" data-cascade-plot>
+    <svg class="information-cascade__edges" data-cascade-edges aria-hidden="true"></svg>
+
+    <section class="information-cascade__stage information-cascade__stage--available" aria-labelledby="cascade-available-label">
+      <p class="information-cascade__stage-label" id="cascade-available-label">1 · Available observations</p>
+      <ol class="information-cascade__source-list">
+        {% for number in (1..8) %}
+          <li><button type="button" class="information-cascade__node information-cascade__source" data-cascade-source="o{{ number }}" aria-pressed="false" disabled>O{{ number }}</button></li>
+        {% endfor %}
+      </ol>
+    </section>
+
+    <section class="information-cascade__stage information-cascade__stage--selected" aria-labelledby="cascade-selection-label">
+      <p class="information-cascade__stage-label" id="cascade-selection-label">2 · AI-surfaced subset</p>
+      <div class="information-cascade__gate" aria-hidden="true"><span>Selection gate</span></div>
+      <ol class="information-cascade__selected-list" data-cascade-selected-list></ol>
+    </section>
+
+    <section class="information-cascade__stage information-cascade__stage--stream" aria-labelledby="cascade-stream-label">
+      <p class="information-cascade__stage-label" id="cascade-stream-label">3 · What later learners see</p>
+      <div class="information-cascade__rounds" data-cascade-rounds></div>
+    </section>
+  </div>
+
+  <dl class="information-cascade__metrics" aria-label="Visible properties of the current illustrative configuration">
+    <div>
+      <dt>Observations surfaced</dt>
+      <dd data-cascade-coverage>6 of 8 available</dd>
+    </div>
+    <div>
+      <dt>Repetition downstream</dt>
+      <dd data-cascade-concentration>2 most repeated fill 4 of 9 slots</dd>
+    </div>
+    <div>
+      <dt>Never seen downstream</dt>
+      <dd data-cascade-omissions>2 observations</dd>
+    </div>
+  </dl>
+
+  <p class="information-cascade__status" data-cascade-status role="status" aria-live="polite">Trace of O1: the AI surfaces it, and it appears in 2 of 3 later rounds (2 of 9 visible slots).</p>
+  <div class="information-cascade__foot">
+    <p>Illustrative configuration only. This schematic shows a possible mechanism—selection before social exposure—not an estimated effect size, fitted model, or depiction of a particular AI system.</p>
+    <a href="https://osf.io/preprints/psyarxiv/qmh3s_v1" target="_blank" rel="noopener noreferrer">Related preprint <span aria-hidden="true">↗</span><span class="visually-hidden"> opens in a new tab</span></a>
+  </div>
+</section>

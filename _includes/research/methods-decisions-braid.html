@@ -1,0 +1,36 @@
+<div class="research-braid" data-research-braid>
+  <div class="research-braid__plot">
+    <svg class="research-braid__edges" aria-hidden="true"></svg>
+
+    <section class="research-braid__column" aria-labelledby="braid-methods-label">
+      <p class="research-braid__column-label" id="braid-methods-label">Methods</p>
+      <ul class="research-braid__list">
+        {% for item in site.data.research_visuals.methods %}
+          <li><button type="button" class="research-braid__node" data-braid-id="{{ item.id }}" data-braid-description="{{ item.description | escape }}" aria-pressed="false" disabled>{{ item.label }}</button></li>
+        {% endfor %}
+      </ul>
+    </section>
+
+    <section class="research-braid__column" aria-labelledby="braid-phenomena-label">
+      <p class="research-braid__column-label" id="braid-phenomena-label">Decision phenomena</p>
+      <ul class="research-braid__list">
+        {% for item in site.data.research_visuals.phenomena %}
+          <li><button type="button" class="research-braid__node" data-braid-id="{{ item.id }}" data-braid-description="{{ item.description | escape }}" aria-pressed="false" disabled>{{ item.label }}</button></li>
+        {% endfor %}
+      </ul>
+    </section>
+
+    <section class="research-braid__column" aria-labelledby="braid-outputs-label">
+      <p class="research-braid__column-label" id="braid-outputs-label">Research outputs</p>
+      <ul class="research-braid__list">
+        {% for item in site.data.research_visuals.papers %}
+          <li><button type="button" class="research-braid__node" data-braid-id="{{ item.id }}" data-braid-description="{{ item.description | escape }}" aria-pressed="{% if forloop.first %}true{% else %}false{% endif %}" disabled>{{ item.short }}</button></li>
+        {% endfor %}
+      </ul>
+    </section>
+  </div>
+
+  <p class="research-braid__status" data-braid-status role="status" aria-live="polite">{{ site.data.research_visuals.papers[0].description }}</p>
+  <p class="sr-only">Interactive research map. Focus or select a method, decision phenomenon, or research output to trace its connected path.</p>
+  <script type="application/json" data-braid-links>{"methodLinks":{{ site.data.research_visuals.method_links | jsonify }},"paperLinks":{{ site.data.research_visuals.paper_links | jsonify }}}</script>
+</div>

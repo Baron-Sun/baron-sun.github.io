@@ -1,0 +1,82 @@
+methods:
+  - id: m-llm
+    label: LLM & NLP methods
+    description: LLM and NLP methods connect all four questions, from human social learning to adaptive policy communication.
+  - id: m-interactive
+    label: Interactive AI systems
+    description: Interactive AI systems connect privacy comprehension and human agency to the ICLR 2025 privacy-agent study.
+  - id: m-experiments
+    label: Behavioral experiments
+    description: Behavioral experiments connect social learning and privacy comprehension to two human-centered AI studies.
+  - id: m-css
+    label: Computational social science
+    description: Computational social science links information selection and adaptive policy communication across social and institutional settings.
+  - id: m-corpus
+    label: Corpus & annotation pipelines
+    description: Corpus and annotation pipelines connect adaptive policy communication to CAPC-CG at ACL 2026.
+
+phenomena:
+  - id: q-social
+    label: Social learning & selection
+    description: Behavioral experiments + computational social science → social learning and information selection → Artificial Intelligence Systems Distort Upstream Selection in Human Social Learning (PsyArXiv, 2026).
+  - id: q-privacy
+    label: Privacy comprehension & agency
+    description: Interactive AI systems + behavioral experiments → privacy comprehension and human agency → Empowering Users in Digital Privacy Management through Interactive LLM-Based Agents (ICLR 2025).
+  - id: q-sufficiency
+    label: Information sufficiency
+    description: LLM and NLP evaluation → information sufficiency and adaptive stopping → Language Models (Mostly) Know When to Stop Reading (NeurIPS 2025).
+  - id: q-policy
+    label: Adaptive policy communication
+    description: LLM/NLP + computational social science + corpus annotation → adaptive policy communication → CAPC-CG (ACL 2026 Main, Oral).
+
+papers:
+  - id: p-social
+    key: social
+    short: AI Distorts Upstream Selection
+    title: Artificial Intelligence Systems Distort Upstream Selection in Human Social Learning
+    venue: PsyArXiv preprint · 2026
+    authors: William J. Brady · Chen-Wei Yu · Nicholas Ornstein · Bolun Sun · Joshua Conrad Jackson
+    url: https://osf.io/preprints/psyarxiv/qmh3s_v1
+    description: Behavioral experiments + computational social science → information selection and social learning → Artificial Intelligence Systems Distort Upstream Selection in Human Social Learning (PsyArXiv, 2026).
+  - id: p-privacy
+    key: privacy
+    short: Interactive LLM Privacy Agents
+    title: Empowering Users in Digital Privacy Management through Interactive LLM-Based Agents
+    venue: ICLR 2025
+    authors: Bolun Sun · Yifan Zhou · Haiyun Jiang
+    url: https://arxiv.org/pdf/2410.11906
+    description: Interactive AI systems + behavioral experiments → privacy comprehension and human agency → Empowering Users in Digital Privacy Management through Interactive LLM-Based Agents (ICLR 2025).
+  - id: p-stop
+    key: stop
+    short: When Language Models Stop Reading
+    title: Language Models (Mostly) Know When to Stop Reading
+    venue: NeurIPS 2025
+    authors: Ruixi Xie · Jiacheng Wang · Petru Rosu · Chunyang Deng · Bolun Sun · Zining Lin · Bhuwan Dhingra
+    url: https://openreview.net/pdf?id=naAUSeyoZ7
+    description: LLM and NLP evaluation → information sufficiency and adaptive stopping → Language Models (Mostly) Know When to Stop Reading (NeurIPS 2025).
+  - id: p-capc
+    key: capc
+    short: CAPC-CG Policy Communication Corpus
+    title: "CAPC-CG: A Large-Scale, Expert-Directed LLM-Annotated Corpus of Adaptive Policy Communication in China"
+    venue: ACL 2026 Main · Oral
+    authors: Bolun Sun · Charles Chang · Yuen Yuen Ang · Ruotong Mu · Yuchen Xu · Zhengxin Zhang · Pingxu Hao
+    url: https://aclanthology.org/2026.acl-long.42.pdf
+    description: LLM/NLP + computational social science + corpus annotation → adaptive policy communication → CAPC-CG (ACL 2026 Main, Oral).
+
+method_links:
+  - [m-llm, q-social]
+  - [m-llm, q-privacy]
+  - [m-llm, q-sufficiency]
+  - [m-llm, q-policy]
+  - [m-interactive, q-privacy]
+  - [m-experiments, q-social]
+  - [m-experiments, q-privacy]
+  - [m-css, q-social]
+  - [m-css, q-policy]
+  - [m-corpus, q-policy]
+
+paper_links:
+  - [q-social, p-social]
+  - [q-privacy, p-privacy]
+  - [q-sufficiency, p-stop]
+  - [q-policy, p-capc]

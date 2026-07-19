@@ -1,4 +1,9 @@
 <script src="{{ base_path }}/assets/js/main.min.js"></script>
 {% if page.url == '/' %}<script src="{{ base_path }}/assets/js/home-interactions.js"></script>{% endif %}
+{% if page.visualizations %}
+  {% for visualization in page.visualizations %}
+    <script src="{{ '/assets/js/visualizations/' | append: visualization | append: '.js' | relative_url }}" defer></script>
+  {% endfor %}
+{% endif %}
 
 {% include analytics.html %}
