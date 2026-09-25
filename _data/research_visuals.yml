@@ -18,7 +18,7 @@ methods:
 phenomena:
   - id: q-social
     label: Social learning & selection
-    description: Behavioral experiments + computational social science → social learning and information selection → Artificial Intelligence Systems Distort Upstream Selection in Human Social Learning (PsyArXiv, 2026).
+    description: Behavioral experiments + computational social science → social learning and information selection → Artificial Intelligence Systems Distort Upstream Selection in Human Social Learning (Current Opinion in Psychology, 2026).
   - id: q-privacy
     label: Privacy comprehension & agency
     description: Interactive AI systems + behavioral experiments → privacy comprehension and human agency → Empowering Users in Digital Privacy Management through Interactive LLM-Based Agents (ICLR 2025).
@@ -34,10 +34,10 @@ papers:
     key: social
     short: AI Distorts Upstream Selection
     title: Artificial Intelligence Systems Distort Upstream Selection in Human Social Learning
-    venue: PsyArXiv preprint · 2026
+    venue: Current Opinion in Psychology · Published online 2026
     authors: William J. Brady · Chen-Wei Yu · Nicholas Ornstein · Bolun Sun · Joshua Conrad Jackson
-    url: https://osf.io/preprints/psyarxiv/qmh3s_v1
-    description: Behavioral experiments + computational social science → information selection and social learning → Artificial Intelligence Systems Distort Upstream Selection in Human Social Learning (PsyArXiv, 2026).
+    url: https://doi.org/10.1016/j.copsyc.2026.102412
+    description: Behavioral experiments + computational social science → information selection and social learning → Artificial Intelligence Systems Distort Upstream Selection in Human Social Learning (Current Opinion in Psychology, 2026).
   - id: p-privacy
     key: privacy
     short: Interactive LLM Privacy Agents
