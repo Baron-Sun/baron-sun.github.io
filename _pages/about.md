@@ -81,8 +81,8 @@ redirect_from:
   </header>
   <ol class="news-list home-section__body">
     <li class="news-item">
-      <time datetime="2026-06">2026.06</time>
-      <p>📑 Preprint released: <a href="https://osf.io/preprints/psyarxiv/qmh3s_v1" target="_blank" rel="noopener noreferrer">Artificial Intelligence Systems Distort Upstream Selection in Human Social Learning</a>.</p>
+      <time datetime="2026-09">2026.09</time>
+      <p>🎉 Paper published online in <strong>Current Opinion in Psychology</strong>: <a href="https://doi.org/10.1016/j.copsyc.2026.102412" target="_blank" rel="noopener noreferrer">Artificial Intelligence Systems Distort Upstream Selection in Human Social Learning</a>.</p>
     </li>
     <li class="news-item">
       <time datetime="2026-04">2026.04</time>
